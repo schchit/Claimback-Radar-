@@ -1,5 +1,10 @@
 # Claimback Radar
 
+**REQUIRED CREDENTIAL**: `OPENAI_API_KEY` environment variable.  
+**EXTERNAL DATA FLOW**: User content is sent to OpenAI API. Review OpenAI's privacy policy before use.
+
+---
+
 AI-powered inbox scanner for hidden refunds, subscription traps, and savings opportunities.
 
 ## ⚠️ Prerequisites & Privacy
