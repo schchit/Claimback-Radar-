@@ -2,6 +2,11 @@
 
 AI-powered inbox scanner for hidden refunds, subscription traps, and savings opportunities.
 
+## ⚠️ Prerequisites & Privacy
+
+- **OpenAI API Key required**: Set `OPENAI_API_KEY` environment variable.
+- **External data flow**: This skill sends your email/bill text to OpenAI API for processing. Do not use with sensitive data unless you explicitly accept OpenAI's data handling terms.
+
 ## What it does
 
 **Function 1: Structured Extraction**
@@ -46,6 +51,12 @@ Paste an email or bill text into the Skill invocation:
 
 - Input: [`schema/input.json`](schema/input.json)
 - Output: [`schema/output.json`](schema/output.json)
+
+## Security Notes
+
+- `main.py` explicitly loads `.env` if present and warns the user.
+- Never commit `.env` files containing real API keys to version control.
+- For production, prefer explicit `api_key` injection over implicit environment loading.
 
 ## License
 
