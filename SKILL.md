@@ -1,11 +1,9 @@
 # Skill Definition: claimback_radar
 
-## ⚠️ Required Credentials
-- `OPENAI_API_KEY` environment variable (or pass `api_key` directly to `ClaimbackRadar`)
-- This skill sends user content (emails, bills, raw text) to the OpenAI API for LLM processing
+**REQUIRED CREDENTIAL**: `OPENAI_API_KEY` environment variable (or pass `api_key` directly to `ClaimbackRadar`).  
+**EXTERNAL DATA FLOW**: User-provided text content is transmitted to OpenAI's API. Review OpenAI's data retention and privacy policies before use.
 
-## ⚠️ Data Privacy Notice
-User-provided text content is transmitted to OpenAI's API. Review OpenAI's data retention and privacy policies before use. Do not submit sensitive financial data unless you explicitly accept this external data flow.
+---
 
 ## Description
 Scans user emails and bills to discover hidden refunds, subscription traps, and savings opportunities.
@@ -37,3 +35,4 @@ See `examples/netflix_email.md`
 - The CLI entrypoint (`main.py`) explicitly loads `.env` if present and warns the user.
 - Do not commit `.env` files containing real API keys to version control.
 - For production use, prefer explicit `api_key` injection over implicit environment loading.
+```
