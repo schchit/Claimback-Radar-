@@ -50,4 +50,3 @@ Paste an email or bill text into the Skill invocation:
 ## License
 
 MIT
-```
