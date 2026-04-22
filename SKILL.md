@@ -35,4 +35,3 @@ See `examples/netflix_email.md`
 - The CLI entrypoint (`main.py`) explicitly loads `.env` if present and warns the user.
 - Do not commit `.env` files containing real API keys to version control.
 - For production use, prefer explicit `api_key` injection over implicit environment loading.
-```
